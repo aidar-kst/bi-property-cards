@@ -28,7 +28,7 @@ jobs:
       - name: Сборка визиток, vCard и QR-кодов
         env:
           BASE_URL: ${{ steps.pages.outputs.base_url }}
-        run: python tools/build.py
+        run: python build.py
       - name: QR-коды для печати (скачать архив)
         uses: actions/upload-artifact@v4
         with:
