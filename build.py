@@ -133,7 +133,7 @@ def page(e):
 <img class="logo" src="../../assets/logo-bi-group.svg" alt="BI Group — We build happiness">
 <section class="who"><h1>{escape(e["full_name"])}</h1>{sub}</section>
 <ul class="contacts">{"".join(rows)}</ul>
-<a class="save" href="{fname}" download="{fname}" type="text/vcard">Сохранить контакт</a>
+<a class="save" href="{fname}">Сохранить контакт</a>
 <p class="hint">Откроется карточка контакта — подтвердите добавление в телефонную книгу.</p>
 </main></body></html>
 '''
